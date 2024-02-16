@@ -19,7 +19,7 @@ let lightbox = new SimpleLightbox('#gallery .gallery-item .gallery-link ', {
   captionSelector: 'img',
 });
 
-searchButton.addEventListener('click', e => {
+searchButton.addEventListener('click', () => {
   console.log(searchInput.value);
 
   getImages(searchInput.value)
