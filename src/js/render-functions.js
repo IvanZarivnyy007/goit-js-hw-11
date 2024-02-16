@@ -7,6 +7,7 @@ import { getImages } from './pixabay-api';
 let searchInput = document.querySelector('#search-input');
 let searchButton = document.querySelector('#search-button');
 let gallery = document.querySelector('#gallery');
+let loader = document.querySelector('.loader');
 
 let lightbox = new SimpleLightbox('#gallery .gallery-item .gallery-link ', {
   dowload: false,
@@ -20,6 +21,7 @@ let lightbox = new SimpleLightbox('#gallery .gallery-item .gallery-link ', {
 });
 
 searchButton.addEventListener('click', () => {
+  loader.style.display = 'inline-block';
   console.log(searchInput.value);
 
   getImages(searchInput.value)
@@ -42,6 +44,7 @@ searchButton.addEventListener('click', () => {
         </div>`;
         })
         .join('');
+      loader.style.display = 'none';
       gallery.innerHTML = galleryTemplate;
       lightbox.refresh();
     })
