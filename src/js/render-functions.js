@@ -22,7 +22,7 @@ let lightbox = new SimpleLightbox('#gallery .gallery-item .gallery-link ', {
 
 searchButton.addEventListener('click', () => {
   loader.style.display = 'inline-block';
-  // console.log(searchInput.value);
+  console.log(searchInput.value);
 
   getImages(searchInput.value)
     .then(response => {
