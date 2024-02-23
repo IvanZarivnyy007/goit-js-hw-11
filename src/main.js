@@ -1,2 +1,6 @@
-import './js/render-functions';
-import './js/pixabay-api';
+import { refs, getGallery } from './js/render-functions';
+
+refs.navigationForm.addEventListener('submit', e => {
+  e.preventDefault();
+  getGallery();
+});
