@@ -32,9 +32,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .image-info {
   display: flex;
+  justify-content: space-between;
   height: 20%;
+}
+
+.image-info div {
+  padding: 3px;
+  text-align: center;
 }
 .gallery-image {
   width: 100%;

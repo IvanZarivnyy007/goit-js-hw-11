@@ -46,10 +46,10 @@ export function getGallery() {
             <img class="gallery-image" src="${hit.webformatURL}" alt="${hit.tags}" />
         </a>
         <div class="image-info">
-            <div>Likes: ${hit.likes}</div>
-            <div>Views: ${hit.views}</div>
-            <div>Comments: ${hit.comments}</div>
-            <div>Downloads: ${hit.downloads}</div>
+            <div><b>Likes</b> ${hit.likes}</div>
+            <div><b>Views</b> ${hit.views}</div>
+            <div><b>Comments</b> ${hit.comments}</div>
+            <div><b>Downloads</b> ${hit.downloads}</div>
         </div>
         </div>`;
         })
